@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Knoldus Simple Test Suite">
+  <test name="Simple Test Suite">
+	<parameter name="url" value="https://www.knoldus.com/home"></parameter>
+    <classes>
+      <class name="com.knoldus.tests.HomeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
