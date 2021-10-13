@@ -56,6 +56,8 @@ object Build : BuildType({
         }
         finishBuildTrigger {
             buildType = "SeleniumMavenTemplate_Build"
+            successfulOnly = true
+            branchFilter = "+:*"
         }
     }
 
