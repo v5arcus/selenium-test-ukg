@@ -56,6 +56,6 @@ object Build : BuildType({
     }
 
     requirements {
-        equals("system.agent.name", "Agent 1-2")
+        equals("system.agent.name", "Agent 2-1")
     }
 })
