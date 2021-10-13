@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.maven
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.VcsTrigger
+import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.finishBuildTrigger
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
 /*
@@ -52,6 +53,9 @@ object Build : BuildType({
             quietPeriod = 10
             perCheckinTriggering = true
             enableQueueOptimization = false
+        }
+        finishBuildTrigger {
+            buildType = "SeleniumMavenTemplate_Build"
         }
     }
 
