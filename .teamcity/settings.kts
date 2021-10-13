@@ -58,6 +58,9 @@ object Build : BuildType({
             buildType = "SeleniumMavenTemplate_Build"
             successfulOnly = true
             branchFilter = "+:*"
+
+            enforceCleanCheckout = true
+            enforceCleanCheckoutForDependencies = true
         }
     }
 
